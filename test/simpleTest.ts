@@ -1,19 +1,9 @@
-
-// let should = require('chai').should(),
-// expect = require('chai').expect,
-// supertest = require('supertest'),
-// api = supertest('http://localhost:3000');
-
-// import 'mocha';
-// import chai, { expect, should } from 'chai';
-
 import { expect } from 'chai';
 import * as supertest from 'supertest';
 
 let api = supertest('http://localhost:3000');
 
 describe('User', () => {
-
   let location1;
   let location2;
   let location3;
