@@ -7,7 +7,7 @@
     "start": "nodemon --ignore 'build' -e 'ts' -x './node_modules/.bin/tsc && node ' build/app/server.js",
     "test": "mocha build/test/ --timeout 10000"
   },
-  "repository": "https://depakk@bitbucket.org/syscolabs/inv-mobile-bff.git",
+  "repository": "https://github.com/depakk/inv-mob.git",
   "author": "Sysco",
   "license": "MIT",
   "dependencies": {
