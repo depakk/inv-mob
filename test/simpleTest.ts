@@ -1,3 +1,5 @@
+/* "test": "mocha build/test/ --timeout 10000" */
+
 import { expect } from 'chai';
 import * as supertest from 'supertest';
 

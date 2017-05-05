@@ -5,7 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --ignore 'build' -e 'ts' -x './node_modules/.bin/tsc && node ' build/app/server.js",
-    "test": "mocha build/test/ --timeout 10000"
+    "test": "nyc mocha"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   },
   "repository": "https://github.com/depakk/inv-mob.git",
   "author": "Sysco",
@@ -14,6 +26,7 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "nodemon": "^1.11.0",
+    "nyc": "^10.3.2",
     "tslint-config-airbnb": "^1.1.1",
     "typescript": "^2.3.2"
   },
@@ -24,6 +37,8 @@
     "@types/supertest": "^2.0.0",
     "chai": "^3.5.0",
     "mocha": "^3.3.0",
-    "supertest": "^3.0.0"
+    "source-map-support": "^0.4.15",
+    "supertest": "^3.0.0",
+    "ts-node": "^3.0.4"
   }
 }
